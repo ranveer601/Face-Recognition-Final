@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Face Regonition App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    </head>
+    <body>
+        <center>
+            <h1>Face Regonition App</h1>
+        
+        <br>
+        <br>
+        <h3>Model is trained to identify the following objects:</h3>
+        <br>
+        <br>
+        Ranveer
+        <br>
+        <br>
+        Mother
+        <br>
+        <br>
+        <div id="WebcamView">
+            <h4>Webcam View</h4>
+        </div>
+        <div id="CapturedImage">
+             <h4>Captured Image</h4>
+         </div>
+         <button id="TakePicture" onclick="takePicture()" class="btn btn-primary">Take Picture</button>  
+         <button id="identify" onclick="identify()" class="btn btn-primary">Identify</button>
+         <span>
+             <h3>Person= </h3> <h3 id="person"></h3>
+         </span> 
+         <span>
+            <h3>Surety= </h3> <h3 id="shurity"></h3>
+        </span> 
+    </center>
+    </body>
+</html>
